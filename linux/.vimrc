@@ -18,6 +18,10 @@ set smarttab
 " always uses spaces instead of tab characters
 set expandtab
 
+" Switch to alternate file
+map <C-Tab> :bnext<cr>
+map <C-S-Tab> :bprevious<cr>
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
